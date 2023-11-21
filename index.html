@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+     
+    <div id="main">
+        <div id="nav">
+            <h1>Sorting Visualizer</h1>
+            <button id="navButton">Bubble</button>
+        </div>
+        <div id="section">
+            <div class="section1">
+                <div id="controller">
+                    <div id="controller_1">
+                        <div class="generator">
+                            <button id="generateBtn">Generate</button>
+                            <select id="selector">
+                                <option value="random">Random</option>
+                                <option value="ascending">Ascending</option>
+                                <option value="descending">Descending</option>
+                            </select>
+                        </div>
+                        <input id="generate" type="text" placeholder="Number to sort">
+                    </div>
+                    <div id="controller_2">
+                        <button id="sortBtn">Sort</button>
+                        <button id="reset">
+                            <i class="ri-loop-left-line"></i>
+                        </button>
+                        <input id="speedInput" type="range" min="1" max="100"  value="50">
+                    </div>
+                </div>
+            </div>
+           
+            <div id="cellBarBtn">
+                <button id="cell">Cell</button>
+                <button id="bar">Bar</button>
+            </div>
+        </div>
+        <div id="container">
+            <header>
+                <h2>Bubble Sort</h2>
+            </header>
+            <div id="visualizer"></div>
+            <footer>
+                <span id="swap">Swaps:0</span>
+                <span id="timeTaken">Time:0</span>
+                <!-- <span id="comparison">Comparisons:0</span> -->
+            </footer>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    position: relative;
+}
+#nav{
+    padding: 20px 40px ;
+    /* min-width: 450px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px rgb(194, 193, 193);
+}
+#navButton{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 100px;
+    background-color:rgb(43,75,254);
+    color: #fff;
+}
+
+#controller{
+    /* min-width: 450; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+}
+#controller_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+#controller_1 input{
+    margin: 20px;
+    width: 50vw;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.generator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sortBtn,
+.generator button,
+.generator select{
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#sortBtn,
+.generator button{
+    background-color:rgb(43,75,254);
+    color: #fff;
+    cursor: pointer;
+}
+#controller_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+#reset{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 30px;
+}
+input[type="range"]{
+    appearance: auto;
+    margin: 2px;
+    border: initial;
+    cursor: pointer;
+    width: 15vw;
+    margin-left: 15px;
+    accent-color: rgb(43,75,254);
+}
+#cellBarBtn{
+    display: flex;
+margin-top: -30px;
+    margin-left: 40%;
+    padding: 20px;
+    text-align: center;
+}
+#cell,
+#bar{
+    cursor: pointer;
+    padding:10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:rgb(43,75,254);
+    color: #fff;
+}
+#container{
+    margin: 0 auto;
+    top: 180%;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    min-width: 360px;
+    max-width: 100%;
+    box-shadow: 0 0 4px rgb(121, 121, 121);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+#visualizer {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.bar {
+    width: 20px;
+    margin: 0 2px;
+    background-color: blue;
+}
+#result{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:360px){
+    #nav{
+        padding: 8px 20px ;
+        font-size: 12px;
+    }
+    #navButton{
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    .section1{
+        /* min-width: 450px; */
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: start; */
+        /* justify-content: space-between; */
+    }
+    .generator button,
+.generator select{
+    padding: 10px 30px;
+    font-size: 18px;
+}
+#controller_1 input{
+    width: 320px;
+}
+    #controller{
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    #controller_1{
+        margin-left: -50px;
+        flex-direction: column;
+    }
+    #sortBtn{
+        padding: 10px 25px;
+    }
+    input[type="range"]{
+        width: 50vw;
+    }
+    #controller_2{
+        /* margin-right: 50px; */
+    }
+    #cellBarBtn{
+        margin-top: 5px;
+    margin-left: 20%;
+    }
+    
+    #cell,
+#bar{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+#container{
+    top: 150%;
+    /* left: 50%; */
+    padding: 5px;
+    margin: 5px;
+    min-width: 320px;
+    flex-wrap: wrap;
+}
+#visualizer{
+    gap: 5px;
+    flex-wrap: wrap;
+}
+#result{
+    margin-top: 10px;
+}
+}
